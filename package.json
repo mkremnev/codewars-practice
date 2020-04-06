@@ -1,0 +1,19 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "codewars",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://m_kremnev@bitbucket.org/m_kremnev/codewars.git"
+  },
+  "author": "Maxim Kremnev",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/m_kremnev/codewars#readme",
+  "dependencies": {
+    "jest": "^25.2.7"
+  }
+}
