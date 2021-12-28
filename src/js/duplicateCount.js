@@ -13,11 +13,10 @@
  */
 
 const duplicateCount = (text) => {
-  const arr = text.split('');
+  const arr = text.toLowerCase().split('');
 
   const dubble = arr.reduce((acc, cur) => {
-    let key = cur.toLowerCase();
-    acc[key] = (acc[key] || 0) + 1
+    acc[cur] = (acc[cur] || 0) + 1
     return acc;
   }, {});
   const filteredCount = Object.entries(dubble).filter(([key, value]) => value > 1).length //?
@@ -25,7 +24,7 @@ const duplicateCount = (text) => {
   return filteredCount;
 }
 
-duplicateCount('aabbcde') //?
+duplicateCount('aabBcde') //?
 
 // Best practikse
 function duplicateCountBest(text){
