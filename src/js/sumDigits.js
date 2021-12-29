@@ -14,4 +14,4 @@ function sumDigits(number) {
   return sum;
 }
 
-module.exports = sumDigits;
+export default sumDigits;

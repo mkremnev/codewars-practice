@@ -11,4 +11,4 @@ function isPangram(string) {
     : true;
 }
 
-module.exports = isPangram;
+export default isPangram;

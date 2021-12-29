@@ -12,4 +12,4 @@ function toWeirdCase(string) {
   return uppString.join('');
 }
 
-module.exports = toWeirdCase;
+export default toWeirdCase;

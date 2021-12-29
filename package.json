@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "codewars",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,8 @@
   "license": "ISC",
   "homepage": "https://bitbucket.org/m_kremnev/codewars#readme",
   "dependencies": {
-    "jest": "^25.2.7"
+    "babel-jest": "^27.4.5",
+    "jest": "^27.4.5",
+    "prettier": "^2.5.1"
   }
 }

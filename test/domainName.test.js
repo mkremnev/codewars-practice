@@ -1,4 +1,4 @@
-const domainName = require('../src/js/domainName');
+import domainName from '../src/js/domainName';
 
 test('Парсинг верный', () => {
   expect(domainName('http://google.com')).toMatch(/google/);

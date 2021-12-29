@@ -39,4 +39,4 @@ const persistence = (num) => {
   return count;
 }
 
-module.exports = persistence;
+export default persistence;

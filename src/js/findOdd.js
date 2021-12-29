@@ -13,4 +13,4 @@ function findOdd(arr) {
   }
 }
 
-module.exports = findOdd;
+export default findOdd;

@@ -27,4 +27,4 @@ function arithmetic(a, b, operator) {
   return result;
 }
 
-module.exports = arithmetic;
+export default arithmetic;

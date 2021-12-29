@@ -31,4 +31,4 @@ function domainName(url) {
   return match.slice(0, match.indexOf('.'));
 }
 
-module.exports = domainName;
+export default domainName;

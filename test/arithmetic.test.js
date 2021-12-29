@@ -1,4 +1,4 @@
-const arithmetic = require('../src/js/arithmetic');
+import arithmetic from '../src/js/arithmetic';
 
 test('Решение верное', () => {
   expect(arithmetic(1, 2, 'add')).toBe(3);
