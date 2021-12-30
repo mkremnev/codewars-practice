@@ -1,25 +1,24 @@
-let snail = (arr) => {
-  let result = [],
-    line = 0,
-    end = false;
+const snail = (arr) => {
+  const result = [];
+  let end = false;
 
   while (!end) {
-    let level = 0,
-      endRow = 0,
-      endColumn = 0,
-      reverse = false;
+    let level = 0;
+    let endRow = 0;
+    let endColumn = 0;
+    let reverse = false;
 
     if (!reverse) {
-      for (endRow; endRow < arr[level].length; endRow += 1) {
+      for (let endRowCurrent = endRow; endRow < arr[level].length; endRow += 1) {
         result.push(arr[level][endRow]);
-        if (endRow == arr[level].length - 1) {
-          endRow = endRow;
+        if (endRow === arr[level].length - 1) {
+          endRow = endRowCurrent;
         }
       }
-      for (level += 1; level < arr.length; level += 1) {
+      for (let levelCurrent = level + 1; level < arr.length; level += 1) {
         result.push(arr[level][endRow - 1]);
-        if (level == arr.length - 1) {
-          endColumn = level;
+        if (level === arr.length - 1) {
+          endColumn = levelCurrent;
           endRow -= 1;
           reverse = true;
         }

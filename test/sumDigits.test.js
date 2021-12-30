@@ -1,4 +1,4 @@
-import sumDigits from'../src/js/sumDigits';
+import sumDigits from '../src/js/sumDigits';
 
 test('Решение верное', () => {
   expect(sumDigits(10)).toBe(1);

@@ -6,7 +6,7 @@
 // }
 
 function sumDigits(number) {
-  let arr = Math.abs(number).toString().split('');
+  const arr = Math.abs(number).toString().split('');
   let sum = 0;
   arr.forEach((element) => {
     sum += parseInt(element);

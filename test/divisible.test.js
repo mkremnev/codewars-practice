@@ -1,6 +1,6 @@
-import { isDivisible } from "../src/js/divisible";
+import { isDivisible } from '../src/js/divisible';
 
-describe("Divisible test", () => {
+describe('Divisible test', () => {
   [
     [3, 3, 4, false],
     [12, 3, 4, true],

@@ -16,19 +16,26 @@ const duplicateCount = (text) => {
   const arr = text.toLowerCase().split('');
 
   const dubble = arr.reduce((acc, cur) => {
-    acc[cur] = (acc[cur] || 0) + 1
+    acc[cur] = (acc[cur] || 0) + 1;
     return acc;
   }, {});
-  const filteredCount = Object.entries(dubble).filter(([key, value]) => value > 1).length //?
+  const filteredCount = Object.entries(dubble).filter(([key, value]) => value > 1).length; // ?
 
   return filteredCount;
-}
+};
 
-duplicateCount('aabBcde') //?
+duplicateCount('aabBcde'); // ?
 
 // Best practikse
-function duplicateCountBest(text){
-  return (text.toLowerCase().split('').sort().join('').match(/([^])\1+/g) || []).length;
+function duplicateCountBest(text) {
+  return (
+    text
+      .toLowerCase()
+      .split('')
+      .sort()
+      .join('')
+      .match(/([^])\1+/g) || []
+  ).length;
 }
 
-duplicateCountBest('aabbcde') //?
+duplicateCountBest('aabbcde'); // ?

@@ -4,7 +4,8 @@
   "description": "codewars",
   "main": "index.js",
   "scripts": {
-    "test": "npx jest"
+    "test": "npx jest",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,20 @@
     "babel-jest": "^27.4.5",
     "jest": "^27.4.5",
     "prettier": "^2.5.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jest": "^25.3.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.4"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
   }
 }

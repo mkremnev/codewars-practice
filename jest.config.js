@@ -1,17 +1,17 @@
 module.exports = {
   verbose: true,
-  rootDir: ".",
-  coverageDirectory: "coverage",
+  rootDir: '.',
+  coverageDirectory: 'coverage',
   transform: {
-    "^.+\\.js$": "babel-jest",
+    '^.+\\.js$': 'babel-jest',
   },
-  "moduleFileExtensions": ["js"],
+  moduleFileExtensions: ['js'],
   moduleNameMapper: {
     // https://jestjs.io/docs/en/webpack#handling-static-assets
-    "^@/(.*)$": "<rootDir>/src/$1",
+    '^@/(.*)$': '<rootDir>/src/$1',
   },
-  moduleDirectories: ["node_modules", "src", "test"],
-  testRegex: "((\\.|/*.)(test))\\.js?$",
+  moduleDirectories: ['node_modules', 'src', 'test'],
+  testRegex: '((\\.|/*.)(test))\\.js?$',
   coverageThreshold: {
     global: {
       branches: 75,

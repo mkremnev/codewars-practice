@@ -10,16 +10,16 @@ function arithmetic(a, b, operator) {
   let result = 0;
   switch (operator) {
     case 'add':
-      return (result = a + b);
+      result = a + b;
       break;
     case 'subtract':
-      return (result = a - b);
+      result = a - b;
       break;
     case 'multiply':
-      return (result = a * b);
+      result = a * b;
       break;
     case 'divide':
-      return (result = a / b);
+      result = a / b;
       break;
     default:
       console.log('Input operators');

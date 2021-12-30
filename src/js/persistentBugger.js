@@ -14,8 +14,6 @@
  * persistence(4) === 0       // because 4 is already a one-digit number
  */
 
-
-
 const persistence = (num) => {
   let count = 0;
 
@@ -32,11 +30,11 @@ const persistence = (num) => {
     }
     count += 1;
     recurcion(result);
-  }
+  };
 
   recurcion(num);
 
   return count;
-}
+};
 
 export default persistence;

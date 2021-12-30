@@ -11,7 +11,7 @@ it.skip('Вхождения найдены правильно', () => {
 });
 
 it.skip('Random tests', function () {
-  var i, sz, a, j, n;
+  let i, sz, a, j, n;
   for (i = 0; i < 40; ++i) {
     sz = Math.round(Math.random() * 1000 + 50);
     if (!sz % 2) {
