@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx jest",
+    "formating": "prettier --write .",
+    "lint": "npx eslint --fix .",
     "prepare": "husky install"
   },
   "repository": {
@@ -35,6 +37,7 @@
     "lint-staged": "^12.1.4"
   },
   "lint-staged": {
+    "*.{js,md,yml}": "prettier --write",
     "*.js": "eslint --cache --fix"
   }
 }
