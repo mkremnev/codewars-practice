@@ -5,9 +5,10 @@ module.exports = {
     'jest/globals': true,
   },
   extends: ['standard', 'plugin:prettier/recommended'],
+  parser: '@babel/eslint-parser',
   plugins: ['prettier', 'jest'],
   parserOptions: {
-    ecmaVersion: 12,
+    ecmaVersion: 2021,
     sourceType: 'module',
   },
   rules: {
